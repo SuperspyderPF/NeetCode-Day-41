@@ -1,0 +1,1 @@
+var isHappy = (n, map = {}) => n == 1 ? true : map[n] ? false : isHappy([...n.toString()].reduce((sum, num) => map[n] = n && sum + num**2, 0), map)
